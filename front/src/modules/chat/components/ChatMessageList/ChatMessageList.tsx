@@ -21,6 +21,17 @@ export default function ChatMessageList(props: PropsWithChildren) {
         height: "100%",
         gap: 2,
         overflowY: "auto",
+        pr: 2,
+        ["&::-webkit-scrollbar"]: {
+          width: "10px",
+        },
+        ["&::-webkit-scrollbar-track"]: {
+          bgcolor: "transparent",
+        },
+        ["&::-webkit-scrollbar-thumb"]: {
+          bgcolor: "grey.400",
+          borderRadius: 2,
+        },
       }}
     >
       {children}
